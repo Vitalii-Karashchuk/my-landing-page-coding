@@ -1,0 +1,34 @@
+.box-item-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 63px;
+  padding-right: 63px;
+
+  .link-item-project:hover &,
+  .link-item-project:focus & {
+    transform: translateY(0%);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

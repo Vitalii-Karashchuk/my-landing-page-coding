@@ -1,0 +1,117 @@
+@media screen and (max-width: 767px) {
+  .our-team__social-item-description {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-bottom: 24px;
+  }
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social__list_link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .social__icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+
+    .social__list_link:hover &,
+    .social__list_link:focus & {
+      fill: #ffffff;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team__social-item-description {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 24px;
+  }
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social__list_link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .social__icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+
+    .social__list_link:hover &,
+    .social__list_link:focus & {
+      fill: #ffffff;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__social-item-description {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+  }
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social__list_link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .social__icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+
+    .social__list_link:hover &,
+    .social__list_link:focus & {
+      fill: #ffffff;
+    }
+  }
+}

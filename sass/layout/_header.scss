@@ -1,0 +1,237 @@
+.header {
+  background-color: var(--background-color);
+  border-bottom: 1px solid #ececec;
+}
+.header-link-logo-start {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.header-link-logo-end {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--main-text-color);
+}
+.header__mobile-menu_block {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    background-color: var(--background-color);
+    border-bottom: 1px solid #ececec;
+
+    &__navigation,
+    &__contacts_menu {
+      display: none;
+    }
+    &__logo {
+      display: block;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    &__container_order-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__mobile-menu-btn {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+    }
+    &__mobile-menu-burger {
+      width: 40px;
+      height: 40px;
+      fill: #212121;
+    }
+    &__mobile-menu-btn,
+    &__mobile-menu:hover {
+      fill: var(--accent-color);
+
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header__logo {
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .header__mobile-menu-btn {
+    display: none;
+  }
+  .header__container_order-header {
+    display: flex;
+    align-items: center;
+  }
+  .header__menu_page {
+    display: flex;
+    margin-left: 88px;
+  }
+  .header__menu_link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .header__menu_page .header__menu_item + .header__menu_item {
+    margin-left: 50px;
+  }
+
+  .header__contacts_menu {
+    margin-left: auto;
+  }
+  .contacts__icon-letter {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: var(--mail-tel-color);
+  }
+  .contacts__mail-link:hover,
+  .contacts__mail-link:focus {
+    color: var(--accent-color);
+  }
+  .contacts__icon-letter {
+    fill: currentColor;
+  }
+  .contacts__icon-phone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    fill: var(--mail-tel-color);
+  }
+  .contacts__tel-link:hover,
+  .contacts__tel-link:focus {
+    color: var(--accent-color);
+  }
+  .contacts__icon-phone {
+    fill: currentColor;
+  }
+  .contacts__mail-link {
+    margin-bottom: 10px;
+  }
+  .contacts__mail-link,
+  .contacts__tel-link {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--mail-tel-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .current {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 4px;
+      bottom: 0%;
+      background: var(--accent-color);
+      border-radius: 2px;
+    }
+    & {
+      color: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+  }
+  .header-link-logo-start {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+  .header-link-logo-end {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--main-text-color);
+  }
+  .header__menu_page {
+    display: flex;
+    margin-left: 93px;
+  }
+  .header__contacts_menu {
+    display: flex;
+    margin-left: auto;
+  }
+  .contacts__mail-link,
+  .contacts__tel-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--mail-tel-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts__icon-letter {
+    width: 16px;
+    height: 12px;
+    margin-right: 8px;
+    fill: var(--mail-tel-color);
+  }
+  .contacts__mail-link:hover,
+  .contacts__mail-link:focus {
+    color: var(--accent-color);
+  }
+  .contacts__icon-letter {
+    fill: currentColor;
+  }
+  .contacts__icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 8px;
+    fill: var(--mail-tel-color);
+  }
+  .contacts__tel-link:hover,
+  .contacts__tel-link:focus {
+    color: var(--accent-color);
+  }
+  .contacts__icon-phone {
+    fill: currentColor;
+  }
+  .header__contacts_menu .contacts__item + .contacts__item {
+    margin-left: 50px;
+  }
+}
